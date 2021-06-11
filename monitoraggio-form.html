@@ -21,7 +21,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Responsive navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <div><a class="navbar-brand" href="#"><img src="assets/logo.png" style="width:200px;"></a></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,9 +45,15 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item  mobile"><a class="nav-link" href="#" style="color: blue;">Segnalazione</a></li>
+                    <li class="nav-item mobile">
+                        <a class="nav-link" href="#"
+                           style="color: rgb(57, 122, 3);">Monitoraggio</a>
+                    </li>
                 </ul>
 
-                <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap" style="padding-left: 10rem;">
+                <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap"
+                    style="padding-left: 10rem;">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
@@ -87,14 +93,14 @@
             <div class="row mb-3 pad">
                 <label for="dataInizio" class="col-sm-2 col-form-label">Data Inizio*</label>
                 <div class="col-sm-10">
-                    <input type="date" id=" dataInizio" name="dataInizio"  required />
+                    <input type="date" id=" dataInizio" name="dataInizio" required />
                 </div>
             </div>
 
             <div class="row mb-3 pad">
                 <label for=" dataFine" class="col-sm-2 col-form-label">Data Fine</label>
                 <div class="col-sm-10">
-                    <input type="date" id="dataFine" name=" dataFine"  />
+                    <input type="date" id="dataFine" name=" dataFine" />
                 </div>
             </div>
 
@@ -102,11 +108,11 @@
                 <label for=" intervallo" class="col-sm-2 col-form-label">Intervallo Monitoraggio*</label>
                 <div class="col-sm-10">
                     <input type="radio" id="intervallo1" name=" intervallo1" value="1Giorno" />
-                    <label for=" intervallo1">1 Giorno</label><br/>
+                    <label for=" intervallo1">1 Giorno</label><br />
                     <input type="radio" id="intervallo3" name=" intervallo3" value="3Giorni" />
-                    <label for="intervallo3">3 Giorni</label> <br/>
-                    <input type="radio" id="intervallo7" name=" intervallo7" value="1Settimana" checked/>
-                    <label for="intervallo7">1 Settimana</label><br/>
+                    <label for="intervallo3">3 Giorni</label> <br />
+                    <input type="radio" id="intervallo7" name=" intervallo7" value="1Settimana" checked />
+                    <label for="intervallo7">1 Settimana</label><br />
                 </div>
             </div>
 
@@ -119,7 +125,7 @@
     <!-- Footer content-->
     <footer class="mt-auto">
         <div class="text-center p-3" style="background-color: black">
-            <p class="text-white">� 2021 Copyright:</p>
+            <p class="text-white">Made with ❤ by Alessio Casolaro, Giuseppe D'Avino, Ciro Maiorino, Giulio Triggiani</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
