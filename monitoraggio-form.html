@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,8 +11,12 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <style>        .pad { padding-bottom:2%;
-        } </style>
+    <style>
+        .pad {
+            padding-bottom: 2%;
+        }
+
+    </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -59,46 +63,61 @@
     </nav>
     <!-- Page content-->
     <div class="container">
-  
-    <form>
-        <div class="row mb-3 pad" style=" padding-top: 2%;">
-            <label for=" nomeS" class="col-sm-2 col-form-label">Nome Segnalazione*</label>
-            <div class="col-sm-10">
-                <input type="text" id=" nomeS" name="nomeS" class="form-control" placeholder="Inserisci nome segnalazione..." required />
-            </div>
-        </div>
-        <div class="row mb-3 pad">
-            <label for=" specie" class="col-sm-2 col-form-label">Specie*</label>
-            <div class="col-sm-10">
-                <input type="text" id=" specie" name="specie" class="form-control" placeholder="Inserisci specie..." required />
-            </div>
-        </div>
 
-        <div class="row mb-3 pad">
-            <label for=" descrLuogo" class="col-sm-2 col-form-label">Descrizione Luogo</label>
-            <div class="col-sm-10">
-                <textarea id="descrLuogo" name="descrLuogo" class="form-control" placeholder="Inserisci una breve descrizione del luogo..."></textarea>
+        <form>
+            <div class="row mb-3 pad" style=" padding-top: 2%;">
+                <label for=" nomeSito" class="col-sm-2 col-form-label">Nome Sito</label>
+                <div class="col-sm-10">
+                    <input type="text" id=" nomeSito" name="nomeSito" class="form-control" placeholder="Inserisci nome del sito.." />
+                </div>
             </div>
-        </div>
+            <div class="row mb-3 pad">
+                <label class="col-sm-2 col-form-label">Posizione*</label>
+                <div class="col-sm-10">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.378567571503!2d14.62511438904083!3d40.75786139048628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bb8c47afd698b%3A0xdaa762a59ed9dbf1!2sZito%20Vincenzo!5e0!3m2!1sit!2sit!4v1622636991897!5m2!1sit!2sit" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="row mb-3 pad">
+                <label for=" imgS" class="col-sm-2 col-form-label">Carica una foto</label>
+                <div class="col-sm-10">
+                    <input type="file" id="imgS" name=" imgS " class="form-control" accept="image/png, image/jpeg" />
+                </div>
+            </div>
 
-        <div class="row mb-3 pad">
-            <label for=" imgS" class="col-sm-2 col-form-label">Carica una foto</label>
-            <div class="col-sm-10">
-                <input type="file" id="imgS" name=" imgS " class="form-control" accept="image/png, image/jpeg" />
+            <div class="row mb-3 pad">
+                <label for="dataInizio" class="col-sm-2 col-form-label">Data Inizio*</label>
+                <div class="col-sm-10">
+                    <input type="date" id=" dataInizio" name="dataInizio"  required />
+                </div>
             </div>
-        </div>
 
-        <div class="row mb-3 pad">
-            <label class="col-sm-2 col-form-label">Posizione*</label>
-            <div class="col-sm-10">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.378567571503!2d14.62511438904083!3d40.75786139048628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bb8c47afd698b%3A0xdaa762a59ed9dbf1!2sZito%20Vincenzo!5e0!3m2!1sit!2sit!4v1622636991897!5m2!1sit!2sit" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="row mb-3 pad">
+                <label for=" dataFine" class="col-sm-2 col-form-label">Data Fine</label>
+                <div class="col-sm-10">
+                    <input type="date" id="dataFine" name=" dataFine"  />
+                </div>
             </div>
+
+            <div class="row mb-3 pad">
+                <label for=" intervallo" class="col-sm-2 col-form-label">Intervallo Monitoraggio*</label>
+                <div class="col-sm-10">
+                    <input type="radio" id="intervallo1" name=" intervallo1" value="1Giorno" />
+                    <label for=" intervallo1">1 Giorno</label><br/>
+                    <input type="radio" id="intervallo3" name=" intervallo3" value="3Giorni" />
+                    <label for="intervallo3">3 Giorni</label> <br/>
+                    <input type="radio" id="intervallo7" name=" intervallo7" value="1Settimana" checked/>
+                    <label for="intervallo7">1 Settimana</label><br/>
+                </div>
             </div>
-        <div class="text-center">
-            <button type="submit" class="btn"style="background-color:#FFB000; color:white">Invia</button>
-        </div>
-    </form>
-        </div>
+
+
+
+
+            <div class="text-center pad">
+                <button type="submit" class="btn" style="background-color:#FFB000; color:white">Inizia Monitoraggio</button>
+            </div>
+        </form>
+    </div>
 
     <!-- Footer content-->
     <footer class="mt-auto">
