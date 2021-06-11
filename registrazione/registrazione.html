@@ -13,29 +13,36 @@
     <link href="../css/styles.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="../css/login.css" rel="stylesheet">
+    <link href="../css/registrazione.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
 
+    <img class="mb-4" src="../assets/logo.png" alt="" width="100%">
+
     <main class="form-signin">
         <form>
-
-            <div class="form-floating">
+           
+            <div class="form-floating mb-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Inserisci il tuo nome...">
+                <label for="floatingInput">Inserisci il tuo nome...</label>
+            </div>
+            <div class="form-floating mt-2 mb-2">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Inserisci il tuo cognome...">
+                <label for="floatingInput">Inserisci il tuo cognome...</label>
+            </div>
+            <div class="form-floating mt-2 mb-2">
                 <input type="email" class="form-control" id="floatingInput" placeholder="Inserisci la tua email...">
                 <label for="floatingInput">Inserisci la tua email...</label>
             </div>
-            <div class="form-floating mt-3">
-                <input type="password" class="form-control" id="floatingPassword"
-                    placeholder="Inserisci la tua password...">
-                <label for="floatingPassword">Inserisci la tua password...</label>
+            <div class="form-floating mt-2">
+                <input type="password" class="form-control" id="floatingInput" placeholder="Inserisci la password...">
+                <label for="floatingInput">Inserisci la password...</label>
             </div>
 
-            <button class="w-100 btn btn-lg" type="submit" style="background-color: #FFB000; color: white;">Login</button>
+            <button class="w-100 btn btn-lg" type="submit" style="background-color: #FFB000; color: white;">Registrati</button>
         </form>
     </main>
-
-    <img class="mb-4" src="../assets/logo.png" alt="" width="100%">
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
