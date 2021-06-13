@@ -1,0 +1,56 @@
+.effect {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 25px;
+    width: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 90%;
+    height: 15rem;
+    border-style: none;
+    border-radius: 0;
+    background-color: #FFB000;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 15rem; 
+  }
+  
+  /* effect-1 styles */
+  .effect.effect-1 {
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+  }
+  .effect.effect-1:before {
+    content: "\f178";
+    font-family: FontAwesome;
+    font-size: 25px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+  }
+  .effect.effect-1:hover {
+    text-indent: -20px;
+    color: white;
+  }
+  .effect.effect-1:hover:before {
+    opacity: 1;
+    text-indent: 0px;
+  }

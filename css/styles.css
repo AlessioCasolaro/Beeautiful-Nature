@@ -3842,7 +3842,7 @@ textarea.form-control-lg {
 .nav {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
+  padding-left: 0.5rem;
   margin-bottom: 0;
   list-style: none;
 }
@@ -3853,6 +3853,7 @@ textarea.form-control-lg {
   color: #0d6efd;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  font-weight: bold;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -3973,7 +3974,7 @@ textarea.form-control-lg {
 }
 .navbar-nav .nav-link {
   padding-right: 0;
-  padding-left: 0;
+  padding-left: 0.5rem;
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -4190,17 +4191,17 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: black;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: #FFB000;
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);
 }
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: #FFB000;
 }
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
@@ -5922,13 +5923,16 @@ textarea.form-control-lg {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 1.25rem;
-  left: 15%;
+  /* right: 15%; */
+  /* bottom: 1.25rem; */
+  left: 24%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
   text-align: center;
+  background: gray;
+  padding: 0.25rem;
+  top: 56%;
 }
 
 .carousel-dark .carousel-control-prev-icon,
@@ -10832,4 +10836,21 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+
+.container-fluid{
+  padding: 0 !important;
+}
+
+.bg-giallo{
+  background-color:#FFB000;
+}
+
+.color-giallo{
+  color:#FFB000;
+}
+
+.color-giallo:hover{
+  color: black;
 }

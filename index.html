@@ -11,12 +11,50 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/news.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/button-home.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        @media screen and (max-width: 1300px) {
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+                text-align: center;
+            }
+
+            .img {
+                width: 30rem;
+                height: 14rem;
+            }
+
+            .btn-nav-mobile {
+                border: 2px solid green;
+                width: 10rem;
+                background-color: green;
+            }
+        }
+
+        @media screen and (min-width: 1301px) {
+            .desktop {
+                display: block;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <!-- Responsive navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+<body class="d-flex flex-column">
+    <div class="container-fluid">
+        <!-- Responsive navbar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
             <div><a class="navbar-brand" href="#"><img src="assets/logo.png" style="width:200px;"></a></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -24,55 +62,357 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap" style="padding-left: 10rem;">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li><a class="dropdown-item" href="#">Registrati</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contattaci">Contattaci</a></li>
+                    <li class="nav-item mobile"><a class="nav-link" href="login/login.html">Segnalazione</a></li>
+                    <li class="nav-item mobile"><a class="nav-link" href="registrazione/registrazione.html">Monitoraggio</a></li>
                 </ul>
             </div>
+            <ul class="nav navbar-nav flex-row justify-content-md-end justify-content-start flex-nowrap">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="login/login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="registrazione/registrazione.html">Registrati</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- END Responsive navbar-->
 
-        </div>
-    </nav>
-    <!-- Page content-->
-    <div class="container">
-        <div class="text-center mt-5">
-            <h1>Titolo</h1>
-            <p class="lead">Paragrafo</p>
-            <p>Paragrafo</p>
+        <!-- Page content-->
 
+        <div class="img-banner">
+            <img class="img-fluid" src="assets/img-banner.png">
         </div>
+
+        <div class="desktop  p-5" id="news" style="max-width: 100%;">
+            <div class="row">
+                <div class="row">
+                    <div class="col">
+                        <figure>
+                            <span>
+                                <img class="img" src="assets/news1.jpg">
+                                <figcaption id="news-button1">Scopri di più ></figcaption>
+                            </span>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <span>
+                                <img class="img" src="assets/news2.jpg">
+                                <figcaption id="news-button2">Scopri di più ></figcaption>
+                            </span>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <div class="button-effect blue">
+                            <a class="effect effect-1" href="login/login.html" title="Monitoraggio">| SEGNALAZIONE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="row">
+                    <div class="col">
+                        <figure>
+                            <span>
+                                <img class="img" src="assets/news3.jpg">
+                                <figcaption id="news-button3">Scopri di più ></figcaption>
+                            </span>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <span>
+                                <img class="img" src="assets/news4.jpg">
+                                <figcaption id="news-button4">Scopri di più ></figcaption>
+                            </span>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <div class="button-effect">
+                            <a class="effect effect-1" href="login/login.html" title="Monitoraggio">| MONITORAGGIO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Mobile -->
+
+        <div class="mobile" style="max-width: 100%;">
+            <div class="row">
+                <div class="row">
+                    <div class="col">
+                        <figure>
+                            <span>
+                                <img class="img" src="assets/news1.jpg">
+                                <figcaption>Scopri di più ></figcaption>
+                            </span>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <span>
+                                <img class="img" src="assets/news2.jpg">
+                                <figcaption>Scopri di più ></figcaption>
+                            </span>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="row">
+                    <div class="col">
+                        <figure>
+                            <span>
+                                <img class="img" src="assets/news3.jpg">
+                                <figcaption>Scopri di più ></figcaption>
+                            </span>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure>
+                            <span>
+                                <img class="img" src="assets/news4.jpg">
+                                <figcaption>Scopri di più ></figcaption>
+                            </span>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End mobile-->
+        <div class="text-center mt-5" id="about">
+            <h1>About Us</h1>
+            <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book. It has survived not only five
+                centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                Ipsum.</p>
+        </div>
+        <div class="row">
+            <!-- Section: Team -->
+            <section class="team-section text-center my-5">
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 p-1 member-circle">
+                        <div class="avatar mx-auto">
+                            <img src="assets/Maiorino.png" class="rounded-circle z-depth-1" alt="Ciro Maiorino">
+                        </div>
+                        <h5 class="font-weight-bold mt-4 mb-3">Ciro Maiorino</h5>
+                        <p class="text-uppercase blue-text"><strong>Manager del Gruppo</strong></p>
+                        <!-- Github -->
+                        <a href="https://github.com/Tekhorror" class="p-2 fa-lg ins-ic" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa fa-github fa-lg color-giallo"> </i>
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 p-1 member-circle">
+                        <div class="avatar mx-auto">
+                            <img src="assets/Casolaro.png" class="rounded-circle z-depth-1" alt="Casolaro">
+                        </div>
+                        <h5 class="font-weight-bold mt-4 mb-3">Alessio Casolaro</h5>
+                        <p class="text-uppercase blue-text"><strong>Manager della Documentazione</strong></p>
+                        <!-- Github -->
+                        <a href="https://github.com/AlessioCasolaro" class="p-2 fa-lg ins-ic" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa fa-github fa-lg color-giallo"> </i>
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 p-1 member-circle">
+                        <div class="avatar mx-auto">
+                            <img src="assets/Triggiani.png" class="rounded-circle z-depth-1" alt="Giulio Triggiani">
+                        </div>
+                        <h5 class="font-weight-bold mt-4 mb-3">Giulio Triggiani</h5>
+                        <p class="text-uppercase blue-text"><strong>Manager della Valutazione</strong></p>
+                        <!-- Github -->
+                        <a href="https://github.com/rayleighRe1" class="p-2 fa-lg ins-ic" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa fa-github fa-lg color-giallo"> </i>
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5 p-1 member-circle">
+                        <div class="avatar mx-auto">
+                            <img src="assets/Davino.png" class="rounded-circle z-depth-1" alt="Giuseppe D'Avino">
+                        </div>
+                        <h5 class="font-weight-bold mt-4 mb-3">Giuseppe D'Avino</h5>
+                        <p class="text-uppercase blue-text"><strong>Manager del Progetto</strong></p>
+                        <!-- Github -->
+                        <a href="https://github.com/onemanonearmy" class="p-2 fa-lg ins-ic" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa fa-github fa-lg color-giallo"> </i>
+                        </a>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+            </section>
+        </div>
+
+
+
+        <!-- Contact Section-->
+        <div id="contattaci">
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Informazioni di contatto</h3>
+                    <p class="text"> Contattaci ai seguenti indirizzi, oppure compila il form. </p>
+                    <div class="info">
+                        <div class="social-information"> <i class="fa fa-map-marker"></i>
+                            <p>San Giuseppe Vesuviano, NA</p>
+                        </div>
+                        <div class="social-information"> <i class="fa fa-envelope-o"></i>
+                            <p>info@Beeautiful-Nature.it</p>
+                        </div>
+                        <div class="social-information"> <i class="fa fa-mobile-phone"></i>
+                            <p>+39 33122221441</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <p>I nostri social:</p>
+                        <div class="social-icons"> <a href="#"> <i class="fa fa-facebook-f"></i> </a> <a href="#"> <i
+                                    class="fa fa-twitter"></i> </a> <a href="#"> <i class="fa fa-instagram"></i> </a> <a
+                                href="https://github.com/AlessioCasolaro/Beeautiful-Nature"> <i
+                                    class="fa fa-github"></i>
+                            </a> </div>
+                    </div>
+                </div>
+                <div class="contact-info-form"> <span class="circle one"></span> <span class="circle two"></span>
+                    <form action="#" onclick="return false;" autocomplete="off">
+                        <h3 class="title">Contattaci</h3>
+                        <div class="social-input-containers"> <input type="text" name="name" class="input"
+                                placeholder="Nome" /> </div>
+                        <div class="social-input-containers"> <input type="email" name="email" class="input"
+                                placeholder="Email" /> </div>
+                        <div class="social-input-containers"> <input type="tel" name="phone" class="input"
+                                placeholder="Telefono" /> </div>
+                        <div class="social-input-containers textarea"> <textarea name="message" class="input"
+                                placeholder="Messaggio"></textarea> </div> <input type="submit" value="Invia"
+                            class="btn btn-form" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+
+
+
+        <!-- The Modal -->
+        <div id="modalNews1" class="modal-news">
+            <!-- Modal content -->
+            <div class="modal-news-content">
+                <div class="modal-news-header">
+                    <span class="close" id="close1">&times;</span>
+                    <h2>Sos degli apicoltori:</h2>
+                </div>
+                <div class="modal-news-body">
+                    <img class="img-fluid news-img" src="assets/news1.jpg">
+                    <p class="pt-5">I messaggi che arrivano dal mondo degli apicoltori sono drammatici sos. Colpa di una
+                        nuova
+                        stagione fallimentare su cui ha pesato un quadro climatico avverso, caratterizzato negli ultimi
+                        mesi da piogge e freddo che stanno mettendo a rischio gli allevamenti.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modalNews2" class="modal-news">
+            <!-- Modal content -->
+            <div class="modal-news-content">
+                <div class="modal-news-header">
+                    <span class="close" id="close2">&times;</span>
+                    <h2>Adottare un'arnia per salvaguardare le api:</h2>
+                </div>
+                <div class="modal-news-body">
+                    <img class="img-fluid news-img" src="assets/news2.jpg">
+                    <p class="pt-5">L'iniziativa per salvaguardare le api: all'azienda agricola Colle San Biagio di
+                        Levico Terme si può donare per contribuire alla gestione di un'arnia, tutelando così l'insetto
+                        che sta alla base dell'intero ecosistema e della piramide della sopravvivenza. “Adotta un'arnia”
+                        il nome del progetto, proposto dalla società agricola che dal 2016 gestisce otto ettari di
+                        terreni sopra il lago di Levico.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modalNews3" class="modal-news">
+            <!-- Modal content -->
+            <div class="modal-news-content">
+                <div class="modal-news-header">
+                    <span class="close" id="close3">&times;</span>
+                    <h2>Adottare un'arnia per salvaguardare le api:</h2>
+                </div>
+                <div class="modal-news-body">
+                    <img class="img-fluid news-img" src="assets/news3.jpg">
+                    <p class="pt-5">Il 20 Maggio di ogni anno ricorre la Giornata Mondiale delle Api, istituita dalle
+                        Nazioni Unite nel Dicembre 2017 su proposta dell’ambasciata della Repubblica di Slovenia presso
+                        la FAO.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modalNews4" class="modal-news">
+            <!-- Modal content -->
+            <div class="modal-news-content">
+                <div class="modal-news-header">
+                    <span class="close" id="close4">&times;</span>
+                    <h2>Adottare un'arnia per salvaguardare le api:</h2>
+                </div>
+                <div class="modal-news-body">
+                    <img class="img-fluid news-img" src="assets/news4.jpg">
+                    <p class="pt-5">“Non si può più perdere tempo! Tutte le istituzioni devono intervenire – dice Marano
+                        – . Le api sono fondamentali per l‘ecosistema e la biodiversità. I dati sono allarmanti, negli
+                        ultimi anni sono morte milioni e milioni di api. In generale, una singola ape visita in media
+                        circa 7.000 fiori al giorno e ci vogliono 4 milioni di visite floreali per produrre un
+                        chilogrammo di miele. Dalle api dipende l’84% della impollinazione delle piante con fiore ed i
+                        tre quarti delle colture fondamentali per la nostra alimentazione. E’ impensabile che in una
+                        terra agricola come la Sicilia non vi siano state determinazioni a tutela del settore che conta
+                        ben 800 piccole e medie imprese nell’apicoltura con 126 mila arnie dichiarate, seconda solamente
+                        al Piemonte come numero di aziende, arnie e miele prodotto. Per non dimenticare che l’apicoltura
+                        siciliana è al primo posto, con ampio distacco dalle altre realtà nazionali, per quantità di
+                        sciami forniti per l’impollinazione nelle serre”.</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Footer content-->
     <footer class="mt-auto">
         <div class="text-center p-3" style="background-color: black">
-            <p class="text-white">Made with ❤ by Alessio Casolaro, Giuseppe D'Avino, Ciro Maiorino, Giulio Triggiani</p>
+            <p class="text-white">Made with ❤ by Alessio Casolaro, Giuseppe D'Avino, Ciro Maiorino, Giulio Triggiani
+            </p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <!-- Modal News JS-->
+    <script src="js/news.js"></script>
     <!-- Fontawesome Core JS-->
     <script src="https://kit.fontawesome.com/eac798224e.js" crossorigin="anonymous"></script>
 
