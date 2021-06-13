@@ -1,22 +1,45 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Monitoraggio-Form</title>
+    <title>Monitoraggio Singolo</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
-        .pad {
-            padding-bottom: 2%;
+        img.cover {
+            width: 400px;
+            /* You can set the dimensions to whatever you want */
+            height: 400px;
+            object-fit: cover;
         }
 
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+        }
+
+            .iframe-container > * {
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+            }
     </style>
+
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -67,61 +90,44 @@
 
         </div>
     </nav>
-    <!-- Page content-->
     <div class="container">
-
-        <form>
-            <div class="row mb-3 pad" style=" padding-top: 2%;">
-                <label for=" nomeSito" class="col-sm-2 col-form-label">Nome Sito</label>
-                <div class="col-sm-10">
-                    <input type="text" id=" nomeSito" name="nomeSito" class="form-control" placeholder="Inserisci nome del sito.." />
-                </div>
+        <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <h4 cl><i class="fas fa-chevron-left "></i> Indietro</h4>
             </div>
-            <div class="row mb-3 pad">
-                <label class="col-sm-2 col-form-label">Posizione*</label>
-                <div class="col-sm-10">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.378567571503!2d14.62511438904083!3d40.75786139048628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bb8c47afd698b%3A0xdaa762a59ed9dbf1!2sZito%20Vincenzo!5e0!3m2!1sit!2sit!4v1622636991897!5m2!1sit!2sit" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+            <div>
+                <h2>Giorno Monitoraggio - Nome Sito</h2>
             </div>
-            <div class="row mb-3 pad">
-                <label for=" imgS" class="col-sm-2 col-form-label">Carica una foto</label>
-                <div class="col-sm-10">
-                    <input type="file" id="imgS" name=" imgS " class="form-control" accept="image/png, image/jpeg" />
-                </div>
+        </div>
+        <div class="row no-gutters" style="margin-top: 35px;margin-bottom: 35px;">
+            <div class="col-4">
+                <img src="stock.jpg" alt="..."
+                     class="cover rounded shadow  bg-body rounded ">
             </div>
-
-            <div class="row mb-3 pad">
-                <label for="dataInizio" class="col-sm-2 col-form-label">Data Inizio*</label>
-                <div class="col-sm-10">
-                    <input type="date" id=" dataInizio" name="dataInizio" required />
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                <div style="margin-bottom: 25px; "class="row">
+                    <div class="col-4">
+                        <p style="font-weight:bold">Data Inizio*: 12/05/2021</p>
+                    </div>
+                    <div class="col-4"> 
+                    <p style="font-weight:bold">Data Fine: 21/10/2021</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="row mb-3 pad">
-                <label for=" dataFine" class="col-sm-2 col-form-label">Data Fine</label>
-                <div class="col-sm-10">
-                    <input type="date" id="dataFine" name=" dataFine" />
-                </div>
+                <h2>Descrizione dettagliata</h2>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
+                    mollis euismod. Donec sed odio dui.
+                </p>
+                <h2>Posizione</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.696546077281!2d14.789498216130337!3d40.768698542080614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bc5c7456b88bd%3A0x80bab96149d2993d!2sUniversit%C3%A0%20degli%20Studi%20di%20Salerno!5e0!3m2!1sit!2sit!4v1623486149015!5m2!1sit!2sit"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <div class="row mb-3 pad">
-                <label for=" intervallo" class="col-sm-2 col-form-label">Intervallo Monitoraggio*</label>
-                <div class="col-sm-10">
-                    <input type="radio" id="intervallo1" name=" intervallo1" value="1Giorno" />
-                    <label for=" intervallo1">1 Giorno</label><br />
-                    <input type="radio" id="intervallo3" name=" intervallo3" value="3Giorni" />
-                    <label for="intervallo3">3 Giorni</label> <br />
-                    <input type="radio" id="intervallo7" name=" intervallo7" value="1Settimana" checked />
-                    <label for="intervallo7">1 Settimana</label><br />
-                </div>
-            </div>
-
-            <div class="text-center pad">
-                <button type="submit" class="btn" style="background-color:#FFB000; color:white">Inizia Monitoraggio</button>
-            </div>
-        </form>
+        </div>
     </div>
 
+    </div>
     <!-- Footer content-->
     <footer class="mt-auto">
         <div class="text-center p-3" style="background-color: black">
@@ -134,7 +140,5 @@
     <script src="js/scripts.js"></script>
     <!-- Fontawesome Core JS-->
     <script src="https://kit.fontawesome.com/eac798224e.js" crossorigin="anonymous"></script>
-
 </body>
-
 </html>
