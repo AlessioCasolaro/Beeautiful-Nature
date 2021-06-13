@@ -1,0 +1,31 @@
+@media screen and (max-width: 1300px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .img {
+        width: 30rem;
+        height: 14rem;
+    }
+
+    .btn-nav-mobile {
+        border: 2px solid green;
+        width: 10rem;
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
