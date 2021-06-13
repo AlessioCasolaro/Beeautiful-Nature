@@ -1,0 +1,8 @@
+table {
+    width: 100%;
+    border-collapse: separate !important;
+}
+
+tr {
+    border-collapse: separate !important;
+}
