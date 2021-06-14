@@ -12,166 +12,140 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Search JS-->
+    <script src="../js/search.js"></script>
+    <style>
+        td{
+            padding-top: 2rem!important;
+            padding-bottom: 2rem!important;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Responsive navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <div><a class="navbar-brand" href="#"><img src="../assets/logo.png" style="width:200px;"></a></div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap"
-                    style="padding-left: 10rem;">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li><a class="dropdown-item" href="#">Registrati</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <div><a class="navbar-brand" href="../index-login.html"><img src="../assets/logo.png" style="width:200px;"></a>
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index-login.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Training</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#contattaci">Contattaci</a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav flex-row justify-content-md-end justify-content-start flex-nowrap">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fa fa-user"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../segnalazione/leMieSegnalazioni.html">Le mie segnalazioni</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../monitoraggio/iMieiMonitoraggi.html">I miei monitoraggi</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
+    <!-- END Responsive navbar-->
     <!-- Page content-->
+    <div class="img-banner">
+        <img class="img-fluid" src="../assets/img-banner.png">
+    </div>
     <div class="container">
-        <div class="text-left mt-auto">
+        <div class="text-left mt-auto p-3">
             <h1>Introduzione</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu rhoncus ex, et eleifend risus.
-                Maecenas non urna nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum
-                commodo dolor et viverra. Suspendisse rhoncus ornare nulla at sollicitudin. Morbi consectetur lorem
-                dolor, vitae feugiat magna convallis vel. Nunc laoreet nulla non dolor consequat, ut consectetur elit
-                dignissim. Praesent ac mi a neque placerat placerat. Ut ac diam mi. Phasellus interdum orci nulla, eget
-                placerat arcu sagittis ut. Ut interdum eros ut metus blandit pharetra. Ut ipsum eros, fermentum eu ipsum
-                et, tristique aliquam turpis. Nullam et neque ex. Etiam accumsan malesuada luctus. Aliquam sit amet
-                mauris orci. Morbi interdum malesuada tincidunt.
-
-                Morbi vestibulum semper odio, in hendrerit leo. Nunc faucibus ante vitae accumsan dapibus. In hac
-                habitasse platea dictumst. Aenean nibh neque, blandit at placerat eu, varius sit amet ipsum. In dictum
-                eget justo at rhoncus.</p>
+            <p>In questa pagina, tramite i Video Corsi potrete acquisire nuove competenze sul mondo delle api e
+                rimanere sempre aggiornati sul tema della biodiversità e sulla salvaguardia delle api.</p>
 
         </div>
         <div class="container">
             <div class="text-left mt-auto">
                 <h2>Video Corsi</h2>
             </div>
-            <div class="container p-3">
-                <div class="row">
-                    <div class="d-flex align-items-center">
-                        <div class="col-5">
-                            <i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> One of three columns
-                        </div>
-                        <div class="col-md-auto">
-                            <iframe width="280" height="157" src="https://www.youtube.com/embed/X8pnED5IODA?controls=0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="container p-3">
-                <div class="row">
-                    <div class="d-flex align-items-center">
-                        <div class="col-5">
-                            <i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> One of three columns
-                        </div>
-                        <div class="col-md-auto">
-                            <iframe width="280" height="157" src="https://www.youtube.com/embed/C2BjyBXTIEY?controls=0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container p-3">
-                <div class="row">
-                    <div class="d-flex align-items-center">
-                        <div class="col-5">
-                            <i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> One of three columns
-                        </div>
-                        <div class="col-md-auto">
-                            <iframe width="280" height="157" src="https://www.youtube.com/embed/DY3O54fYS_0?controls=0"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container p-3">
-                <div class="row">
-                    <div class="d-flex align-items-center">
-                        <div class="col-5">
-                            <i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> One of three columns
-                        </div>
-                        <div class="col-md-auto">
-                            <iframe width="280" height="157" src="https://www.youtube.com/embed/trnEk--mlIs"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container p-3">
-                <div class="row">
-                    <div class="d-flex align-items-center">
-                        <div class="col-5">
-                            <i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> One of three columns
-                        </div>
-                        <div class="col-md-auto">
-                            <iframe width="280" height="157" src="https://www.youtube.com/embed/tYLgR119FTg"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container p-3">
-                <div class="row">
-                    <div class="d-flex align-items-center">
-                        <div class="col-5">
-                            <i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> One of three columns
-                        </div>
-                        <div class="col-md-auto">
-                            <iframe width="280" height="157" src="https://www.youtube.com/embed/JH2nnMmxW6w"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <input type="text" id="myInput" onkeyup="search()" placeholder="Ricerca il video..">
+
+            <table class="table" id="myTable">
+                <tr>
+                    <td><h5><i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> Come si fa il miele
+                    </br></h5>
+                    <p><em>Il più grande produttore del dolce nettare in Svizzera ci conduce nel suo
+                            alveare
+                            e ci mostra la produzione di un vaso di acacia. </em></p></td>
+                    <td><iframe width="280" height="157"
+                        src="https://www.youtube.com/embed/X8pnED5IODA?controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td><h5><i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> Le api, entriamo nel
+                        loro incredibile mondo grazie a Mielizia e Conapi </br></h5>
+                        <p><em>Viaggio nel mondo delle api grazie a Mielizia e Conapi </em></p></td>
+                    <td><iframe width="280" height="157"
+                        src="https://www.youtube.com/embed/C2BjyBXTIEY?controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td><h5><i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> La meravigliosa vita
+                        delle api </br></h5>
+                        <p><em>La vita delle api vista dalla videocamera in un alveare.</em></p></td>
+                    <td><iframe width="280" height="157"
+                        src="https://www.youtube.com/embed/DY3O54fYS_0?controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td><h5><i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> Le API sono DAVVERO
+                        in PERICOLO? </br></h5>
+                        <p><em>Ho fatto un corso di apicoltura dove mi hanno spiegato che le api sono in
+                                pericolo.
+                                Come vi spiego in questo video però tutto è molto più complesso. </em></p></td>
+                    <td><iframe width="280" height="157" src="https://www.youtube.com/embed/trnEk--mlIs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td><h5><i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> APICOLTURA: Come
+                        allevare le api </br></h5>
+                        <p><em>In questo video mi trovo in un allevamento di api e
+                                oltre alle risate una piccola spiegazione di come allevare api grazie
+                                dell'invito
+                            </em></p></td>
+                    <td><iframe width="280" height="157" src="https://www.youtube.com/embed/tYLgR119FTg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></td>
+                </tr>
+                <tr>
+                    <td><h5><i class="fas fa-arrow-circle-right" style="color:#FFB000"></i> Ecco come produrre
+                        il proprio miele in casa! </br></h5>
+                        <p><em>In questo video verrà spiegato come produrre il miele in casa.</em></p></td>
+                    <td><iframe width="280" height="157" src="https://www.youtube.com/embed/JH2nnMmxW6w"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></td>
+                </tr>
+            </table>
         </div>
 
 
-        <!-- Footer content-->
+    </div>
+
+    <!-- Footer content-->
+    <div>
         <footer class="mt-auto">
             <div class="text-center p-3" style="background-color: black">
                 <p class="text-white">Made with ❤ by Alessio Casolaro, Giuseppe D'Avino, Ciro Maiorino, Giulio Triggiani
@@ -180,11 +154,8 @@
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
         <!-- Fontawesome Core JS-->
         <script src="https://kit.fontawesome.com/eac798224e.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
