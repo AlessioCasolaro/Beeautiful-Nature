@@ -10863,3 +10863,7 @@ textarea.form-control-lg {
 .color-giallo:hover{
   color: black;
 }
+
+.img-banner .img-fluid{
+  width: 100%;
+}
