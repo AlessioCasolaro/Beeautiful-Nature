@@ -13,7 +13,7 @@
 
 # Description
 
-📕 🎓Project froduced for the Human Machine Interaction of Computer Science at University of Salerno.
+📕 🎓Project produced for the Human Machine Interaction courses of Computer Science at University of Salerno.
 
 # Technical informations
 
