@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/responsiveness.css" rel="stylesheet" />
     <style>
         img.cover {
             width: 400px;
@@ -44,37 +45,36 @@
 
 <body class="d-flex flex-column min-vh-100">
     <div class="container-fluid">
-        <!-- Responsive navbar-->
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-            <div><a class="navbar-brand" href="../index-login.html"><img src="../assets/logo.png"
-                        style="width:200px;"></a></div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../training/training.html">Training</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index-login.html#news">News</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index-login.html#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../index-login.html#contattaci">Contattaci</a></li>
-                </ul>
-            </div>
-            <ul class="nav navbar-nav flex-row justify-content-md-end justify-content-start flex-nowrap">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="../segnalazione/leMieSegnalazioni.html">Le mie
-                                segnalazioni</a></li>
-                        <li><a class="dropdown-item" href="../monitoraggio/iMieiMonitoraggi.html">I miei monitoraggi</a>
-                        </li>
-                        <li><a class="dropdown-item" href="../index.html">Logout</a></li>
-                    </ul>
-                </li>
+         <!-- Responsive navbar-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <div><a class="navbar-brand" href="../index-login.html"><img src="../assets/logo.png" style="width:200px;"></a></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../acquisireCompetenze/acquisireCompetenze.html">Training</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#contattaci">Contattaci</a></li>
+                <li class="nav-item mobile"><a class="nav-link" href="segnalazione-form.html">Segnalazione</a></li>
+                <li class="nav-item mobile"><a class="nav-link" href="../monitoraggio/monitoraggio-form.html">Monitoraggio</a></li>
             </ul>
-        </nav>
-        <!-- END Responsive navbar-->
+        </div>
+        <ul class="nav navbar-nav flex-row justify-content-md-end justify-content-start flex-nowrap">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../segnalazione/leMieSegnalazioni.html">Le mie segnalazioni</a></li>
+                    <li><a class="dropdown-item" href="../monitoraggio/iMieiMonitoraggi.html">I miei monitoraggi</a></li>
+                    <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- END Responsive navbar-->
         <!-- Page content-->
         <div class="container">
             <div class="d-flex justify-content-between">

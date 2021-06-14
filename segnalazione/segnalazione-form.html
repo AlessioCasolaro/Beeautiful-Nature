@@ -16,77 +16,110 @@
 
 <body class="d-flex flex-column min-vh-100">
     <div class="container-fluid">
-    <!-- Responsive navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-        <div><a class="navbar-brand" href="../index-login.html"><img src="../assets/logo.png" style="width:200px;"></a></div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="../training/training.html">Training</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index-login.html#news">News</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index-login.html#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index-login.html#contattaci">Contattaci</a></li>
-            </ul>
-        </div>
-        <ul class="nav navbar-nav flex-row justify-content-md-end justify-content-start flex-nowrap">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../segnalazione/leMieSegnalazioni.html">Le mie segnalazioni</a></li>
-                    <li><a class="dropdown-item" href="../monitoraggio/iMieiMonitoraggi.html">I miei monitoraggi</a></li>
-                    <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+        <!-- Responsive navbar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+            <div><a class="navbar-brand" href="../index-login.html"><img src="../assets/logo.png"
+                        style="width:200px;"></a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../acquisireCompetenze/acquisireCompetenze.html">Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index-login.html#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index-login.html#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index-login.html#contattaci">Contattaci</a></li>
+                    <li class="nav-item mobile"><a class="nav-link" href="segnalazione-form.html">Segnalazione</a></li>
+                    <li class="nav-item mobile"><a class="nav-link" href="../monitoraggio/monitoraggio-form.html">Monitoraggio</a></li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
-    <!-- END Responsive navbar-->
-    <!-- Page content-->
-    <div class="container">
+            </div>
+            <ul class="nav navbar-nav flex-row justify-content-md-end justify-content-start flex-nowrap">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../segnalazione/leMieSegnalazioni.html">Le mie
+                                segnalazioni</a></li>
+                        <li><a class="dropdown-item" href="../monitoraggio/iMieiMonitoraggi.html">I miei monitoraggi</a>
+                        </li>
+                        <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- END Responsive navbar-->
+        <!-- Page content-->
+        <div class="container">
 
-        <form class="pb-3">
-            <div class="row mb-3 pt-3 pb-3">
-                <label for=" nomeS" class="col-sm-2 col-form-label">Nome Segnalazione*</label>
-                <div class="col-sm-10">
-                    <input type="text" id=" nomeS" name="nomeS" class="form-control" placeholder="Inserisci nome segnalazione..." required />
+            <form class="pb-3">
+                <div class="row mb-3 pt-3 pb-3">
+                    <label for=" nomeS" class="col-sm-2 col-form-label">Nome Segnalazione*</label>
+                    <div class="col-sm-10">
+                        <input type="text" id=" nomeS" name="nomeS" class="form-control"
+                            placeholder="Inserisci nome segnalazione..." required />
+                    </div>
                 </div>
-            </div>
-            <div class="row mb-3 pb-3">
-                <label for=" specie" class="col-sm-2 col-form-label">Specie*</label>
-                <div class="col-sm-10">
-                    <input type="text" id=" specie" name="specie" class="form-control" placeholder="Inserisci specie..." required />
+                <div class="row mb-3 pb-3">
+                    <label for=" specie" class="col-sm-2 col-form-label">Specie*</label>
+                    <div class="col-sm-10">
+                        <input type="text" id=" specie" name="specie" class="form-control"
+                            placeholder="Inserisci specie..." required />
+                    </div>
+                </div>
+
+                <div class="row mb-3 pb-3">
+                    <label for=" descrLuogo" class="col-sm-2 col-form-label">Descrizione Luogo</label>
+                    <div class="col-sm-10">
+                        <textarea id="descrLuogo" name="descrLuogo" class="form-control"
+                            placeholder="Inserisci una breve descrizione del luogo..."></textarea>
+                    </div>
+                </div>
+
+                <div class="row mb-3 pb-3">
+                    <label for=" imgS" class="col-sm-2 col-form-label">Carica una foto</label>
+                    <div class="col-sm-10">
+                        <input type="file" id="imgS" name=" imgS " class="form-control"
+                            accept="image/png, image/jpeg" />
+                    </div>
+                </div>
+
+                <div class="row mb-3 pb-3">
+                    <label class="col-sm-2 col-form-label">Posizione*</label>
+                    <div class="col-sm-10">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.378567571503!2d14.62511438904083!3d40.75786139048628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bb8c47afd698b%3A0xdaa762a59ed9dbf1!2sZito%20Vincenzo!5e0!3m2!1sit!2sit!4v1622636991897!5m2!1sit!2sit"
+                            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn" style="background-color:#FFB000; color:white" data-bs-toggle="modal" data-bs-target="#confermaInvio">Invia</button>
+                </div>
+            </form>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="confermaInvio" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Sei sicuro di voler inviare la segnalazione?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Scegli tra le opzioni.
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn bg-giallo px-5"  href="segnalazioneSingola.html">Si</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row mb-3 pb-3">
-                <label for=" descrLuogo" class="col-sm-2 col-form-label">Descrizione Luogo</label>
-                <div class="col-sm-10">
-                    <textarea id="descrLuogo" name="descrLuogo" class="form-control" placeholder="Inserisci una breve descrizione del luogo..."></textarea>
-                </div>
-            </div>
-
-            <div class="row mb-3 pb-3">
-                <label for=" imgS" class="col-sm-2 col-form-label">Carica una foto</label>
-                <div class="col-sm-10">
-                    <input type="file" id="imgS" name=" imgS " class="form-control" accept="image/png, image/jpeg" />
-                </div>
-            </div>
-
-            <div class="row mb-3 pb-3">
-                <label class="col-sm-2 col-form-label">Posizione*</label>
-                <div class="col-sm-10">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6044.378567571503!2d14.62511438904083!3d40.75786139048628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bb8c47afd698b%3A0xdaa762a59ed9dbf1!2sZito%20Vincenzo!5e0!3m2!1sit!2sit!4v1622636991897!5m2!1sit!2sit" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn" style="background-color:#FFB000; color:white">Invia</button>
-            </div>
-        </form>
+        </div>
     </div>
-</div>
     <!-- Footer content-->
     <footer class="mt-auto">
         <div class="text-center p-3" style="background-color: black">

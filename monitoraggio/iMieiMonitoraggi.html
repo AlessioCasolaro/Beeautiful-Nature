@@ -16,124 +16,109 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Responsive navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <div><a class="navbar-brand" href="#"><img src="../assets/logo.png" style="width:200px;"></a></div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap" style="padding-left: 10rem;">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li><a class="dropdown-item" href="#">Registrati</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <div><a class="navbar-brand" href="../index-login.html"><img src="../assets/logo.png" style="width:200px;"></a>
         </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../acquisireCompetenze/acquisireCompetenze.html">Training</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index-login.html#contattaci">Contattaci</a></li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav flex-row justify-content-md-end justify-content-start flex-nowrap">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="fa fa-user"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../segnalazione/leMieSegnalazioni.html">Le mie
+                            segnalazioni</a></li>
+                    <li><a class="dropdown-item" href="../monitoraggio/iMieiMonitoraggi.html">I miei monitoraggi</a>
+                    </li>
+                    <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
+    <!-- END Responsive navbar-->
     <!-- Page content-->
-    <div class="container">
-        <div class="text-center mt-5">
-            <h1>Titolo</h1>
-            <p class="lead">Paragrafo</p>
-            <p>Paragrafo</p>
-
-        </div>
-    </div>
 
     <div class="container">
         <table class="table table-hover">
             <thead>
-            <tr>
-                <th scope="col">Nome sito</th>
-                <th scope="col">Data Inizio</th>
-                <th scope="col">Data fine</th>
-            </tr>
+                <tr>
+                    <th scope="col">Nome sito</th>
+                    <th scope="col">Data Inizio</th>
+                    <th scope="col">Data fine</th>
+                </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Salerno</td>
-                <td>02/12/2021</td>
-                <td>06/12/2021</td>
-            </tr>
-            <tr>
-                <td>Fisciano</td>
-                <td>15/11/2021</td>
-                <td>16/11/2021</td>
-            </tr>
-            <tr>
-                <td>Baronissi</td>
-                <td>20/10/2021</td>
-                <td>27/10/2021</td>
-            </tr>
-            <tr>
-                <td>Caserta</td>
-                <td>12/10/2021</td>
-                <td>15/10/2021</td>
-            </tr>
-            <tr>
-                <td>Castellamare</td>
-                <td>13/09/2021</td>
-                <td>24/09/2021</td>
-            </tr>
-            <tr>
-                <td>Portici</td>
-                <td>25/08/2021</td>
-                <td>28/08/2021</td>
-            </tr>
-            <tr>
-                <td>Napoli</td>
-                <td>15/07/2021</td>
-                <td>21/07/2021</td>
-            </tr>
-            <tr>
-                <td>Pagani</td>
-                <td>01/07/2021</td>
-                <td>11/07/2021</td>
-            </tr>
-            <tr>
-                <td>Nocera</td>
-                <td>22/05/2021</td>
-                <td>24/05/2021</td>
-            </tr>
-            <tr>
-                <td>Somma Vesuviana</td>
-                <td>12/05/2021</td>
-                <td>22/05/2021</td>
-            </tr>
-            <tr>
-                <td>Torre del Greco</td>
-                <td>20/04/2021</td>
-                <td>22/04/2021</td>
-            </tr>
-            <tr>
-                <td>Afragola</td>
-                <td>16/02/2021</td>
-                <td>10/02/2021</td>
-            </tr>
+                
+                <tr>
+                    <td><a href="monitoraggioSito.html">Salerno</a></td>
+                    <td>02/12/2021</td>
+                    <td>06/12/2021</td>
+                </tr>
+                <tr>
+                    <td>Fisciano</td>
+                    <td>15/11/2021</td>
+                    <td>16/11/2021</td>
+                </tr>
+                <tr>
+                    <td>Baronissi</td>
+                    <td>20/10/2021</td>
+                    <td>27/10/2021</td>
+                </tr>
+                <tr>
+                    <td>Caserta</td>
+                    <td>12/10/2021</td>
+                    <td>15/10/2021</td>
+                </tr>
+                <tr>
+                    <td>Castellamare</td>
+                    <td>13/09/2021</td>
+                    <td>24/09/2021</td>
+                </tr>
+                <tr>
+                    <td>Portici</td>
+                    <td>25/08/2021</td>
+                    <td>28/08/2021</td>
+                </tr>
+                <tr>
+                    <td>Napoli</td>
+                    <td>15/07/2021</td>
+                    <td>21/07/2021</td>
+                </tr>
+                <tr>
+                    <td>Pagani</td>
+                    <td>01/07/2021</td>
+                    <td>11/07/2021</td>
+                </tr>
+                <tr>
+                    <td>Nocera</td>
+                    <td>22/05/2021</td>
+                    <td>24/05/2021</td>
+                </tr>
+                <tr>
+                    <td>Somma Vesuviana</td>
+                    <td>12/05/2021</td>
+                    <td>22/05/2021</td>
+                </tr>
+                <tr>
+                    <td>Torre del Greco</td>
+                    <td>20/04/2021</td>
+                    <td>22/04/2021</td>
+                </tr>
+                <tr>
+                    <td>Afragola</td>
+                    <td>16/02/2021</td>
+                    <td>10/02/2021</td>
+                </tr>
             </tbody>
         </table>
     </div>
@@ -141,7 +126,7 @@
     <!-- Footer content-->
     <footer class="mt-auto">
         <div class="text-center p-3" style="background-color: black">
-            <p class="text-white">© 2021 Copyright:</p>
+            <p class="text-white">Made with ❤ by Alessio Casolaro, Giuseppe D'Avino, Ciro Maiorino, Giulio Triggiani</p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
