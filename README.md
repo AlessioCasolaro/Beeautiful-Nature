@@ -11,6 +11,15 @@
 | Giulio Triggiani | g.triggiani@studenti.unisa.it |05121 06057|
 | Giuseppe D'Avini | g.davino29@studenti.unisa.it |05121 05976|
 
+# Description
+
+📕 🎓Project froduced for the Human Machine Interaction of Computer Science at University of Salerno.
+
+# Technical informations
+
+This project is built up with HTML, CSS, Javascript, Jquery
+
+
 # Installation
 
 ### Requirements
@@ -22,5 +31,5 @@
 ```sh
 git clone https://github.com/AlessioCasolaro/Beeautiful-Nature.git
 ```
-### Simulation
+# Simulation
 * Start simulation at "index.html"
