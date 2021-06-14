@@ -13,7 +13,7 @@ body {
 
 .form-signin {
   width: 100%;
-  max-width: 100%;
+  min-width: 60%;
   padding: 15px;
   margin: auto;
 }
@@ -36,4 +36,8 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.error-placeholder{
+  border-color:red!important;
 }

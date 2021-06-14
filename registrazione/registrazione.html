@@ -6,43 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Beeautiful Nature</title>
+    <title>Beeautiful Nature - Registrati</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/styles.css" rel="stylesheet" />
-
+    <link href="../css/responsiveness.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="../css/registrazione.css" rel="stylesheet">
+    <!-- Regex JS-->
+    <script src="../js/regex.js"></script>
 </head>
 
-<body class="text-center">
+<body class="text-center container">
 
-    <img class="mb-4" src="../assets/logo.png" alt="" width="100%">
+    <div class="login-desktop"><a href="../index.html"><img class="mb-4 img-fluid" src="../assets/logo.png" alt="Torna alla Home"></a></div>
 
-    <main class="form-signin">
-        <form>
+    <div class="form-signin">
+        <div class="login-mobile"><a href="../index.html"><img class="mb-4 img-fluid" src="../assets/logo.png" alt="Torna alla Home"></a></div>
+        <div>
            
             <div class="form-floating mb-2">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Inserisci il tuo nome...">
-                <label for="floatingInput">Inserisci il tuo nome...</label>
+                <input type="text" class="form-control" id="nome" placeholder="Inserisci il tuo nome..." required>
+                <label for="nome" id="nomeLabel">Inserisci il tuo nome...</label>
             </div>
             <div class="form-floating mt-2 mb-2">
-                <input type="text" class="form-control" id="floatingInput" placeholder="Inserisci il tuo cognome...">
-                <label for="floatingInput">Inserisci il tuo cognome...</label>
+                <input type="text" class="form-control" id="cognome" placeholder="Inserisci il tuo cognome..." required>
+                <label for="cognome" id="cognomeLabel">Inserisci il tuo cognome...</label>
             </div>
             <div class="form-floating mt-2 mb-2">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Inserisci la tua email...">
-                <label for="floatingInput">Inserisci la tua email...</label>
+                <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email..." required>
+                <label for="email" id="emailLabel">Inserisci la tua email...</label>
             </div>
             <div class="form-floating mt-2">
-                <input type="password" class="form-control" id="floatingInput" placeholder="Inserisci la password...">
-                <label for="floatingInput">Inserisci la password...</label>
+                <input type="password" class="form-control" id="password" placeholder="Inserisci la password..." required>
+                <label for="password" id="passwordLabel">Inserisci la password...</label>
             </div>
 
-            <button class="w-100 btn btn-lg" type="submit" style="background-color: #FFB000; color: white;">Registrati</button>
-        </form>
-    </main>
+            <button class="w-100 btn btn-lg" role="button" style="background-color: #FFB000; color: white;" onclick="validateLettore()">Registrati</button>
+        </div>
+    </div>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>

@@ -43,82 +43,77 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!-- Responsive navbar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
-            <div><a class="navbar-brand" href="#"><img src="../assets/logo.png" style="width:200px;"></a></div>
+    <div class="container-fluid">
+        <!-- Responsive navbar-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+            <div><a class="navbar-brand" href="../index-login.html"><img src="../assets/logo.png"
+                        style="width:200px;"></a></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap"
-                    style="padding-left: 10rem;">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li><a class="dropdown-item" href="#">Registrati</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../training/training.html">Training</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index-login.html#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index-login.html#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index-login.html#contattaci">Contattaci</a></li>
                 </ul>
             </div>
-
-        </div>
-    </nav>
-    <!-- Page content-->
-    <div class="container">
-        <div class="d-flex justify-content-between">
-            <div class="d-flex align-items-center">
-                <h4 cl><i class="fas fa-chevron-left "></i> Indietro</h4>
+            <ul class="nav navbar-nav flex-row justify-content-md-end justify-content-start flex-nowrap">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-user"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../segnalazione/leMieSegnalazioni.html">Le mie
+                                segnalazioni</a></li>
+                        <li><a class="dropdown-item" href="../monitoraggio/iMieiMonitoraggi.html">I miei monitoraggi</a>
+                        </li>
+                        <li><a class="dropdown-item" href="../index.html">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- END Responsive navbar-->
+        <!-- Page content-->
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                    <h4><a href="leMieSegnalazioni.html" class="text-decoration-none color-giallo"><i
+                                class="fas fa-chevron-left "></i> Indietro</a></h4>
+                </div>
+                <div>
+                    <h2 class="color-giallo">Nome segnalazione:<h4>Avvistamento Casa</h4>
+                    </h2>
+                </div>
             </div>
-            <div>
-                <h1>Nome segnalazione</h1>
-            </div>
-        </div>
-        <div class="row no-gutters" style="margin-top: 35px;margin-bottom: 35px;">
-            <div class="col-4"><img src="../assets/FINAL_Bees.jpg" alt="..."
-                    class="cover rounded shadow  bg-body rounded "></div>
-            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-                <div style="margin-bottom: 25px;">
-                    <h2>Specie</h2>
+            <div class="row no-gutters pt-3 pb-3" style="margin-top: 35px;margin-bottom: 35px;">
+                <div class="col-4"><img src="../assets/FINAL_Bees.jpg" alt="..."
+                        class="cover rounded shadow  bg-body rounded "></div>
+                <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                    <div style="margin-bottom: 25px;">
+                        <h2>Specie</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
+                            tortor
+                            mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                            magna
+                            mollis euismod. Donec sed odio dui. </p>
+                    </div>
+                    <h2>Descrizione</h2>
                     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
                         mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
                         magna
                         mollis euismod. Donec sed odio dui. </p>
+                    <h2>Posizione</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.696546077281!2d14.789498216130337!3d40.768698542080614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bc5c7456b88bd%3A0x80bab96149d2993d!2sUniversit%C3%A0%20degli%20Studi%20di%20Salerno!5e0!3m2!1sit!2sit!4v1623486149015!5m2!1sit!2sit"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <h2>Descrizione</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                    mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna
-                    mollis euismod. Donec sed odio dui. </p>
-                <h2>Posizione</h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.696546077281!2d14.789498216130337!3d40.768698542080614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bc5c7456b88bd%3A0x80bab96149d2993d!2sUniversit%C3%A0%20degli%20Studi%20di%20Salerno!5e0!3m2!1sit!2sit!4v1623486149015!5m2!1sit!2sit"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
             </div>
-
         </div>
-    </div>
 
     </div>
-
     <!-- Footer content-->
     <footer class="mt-auto">
         <div class="text-center p-3" style="background-color: black">
